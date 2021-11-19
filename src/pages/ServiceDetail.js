@@ -1,4 +1,5 @@
 //This is the interface for the selected service - when a user has pressed "look more" in the past action
+
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -16,7 +17,7 @@ const ServiceDetail = props => {
       fetchServiceById(serviceId)
     }, [serviceId, fetchServiceById])
   
-  
+    // service user and auth user, if they are the same then it means its the service owner
     const { service, auth } = props
     const { user } = service
 
