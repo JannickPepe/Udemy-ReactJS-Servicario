@@ -14,6 +14,6 @@ app.get('*', (req, res) => {
     return res.sendFile(path.resolve('build', 'index.html'))
 })
 
-// specify the environment or take it the localhost 3000 and make have the listen method to PORT where msg will come in the terminal
+// specify the environment or take it the localhost 3000 and make have the listen method to PORT where msg will come
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`)) 
